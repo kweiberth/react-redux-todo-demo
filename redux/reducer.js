@@ -1,7 +1,7 @@
 import assign from 'object-assign';
 
 var getId = function (state) {
-  return state.reduce(function (maxId, todo) {
+  return state.todos.reduce(function (maxId, todo) {
     return Math.max(todo.id, maxId)
   }, -1) + 1;
 };

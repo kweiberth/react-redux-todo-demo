@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Song = React.createClass({
+var TodoItem = React.createClass({
 
   // handleClick: function() {
   //   this.props.fetchSongs(3);
@@ -19,4 +19,4 @@ var Song = React.createClass({
   }
 });
 
-module.exports = Song;
+module.exports = TodoItem;
