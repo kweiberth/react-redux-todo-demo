@@ -1,5 +1,6 @@
-var config = require('./webpack.config')
+var config = require('../webpack.config')
 var express = require('express');
+var path = require('path');
 var webpack = require('webpack')
 var webpackDevMiddleware = require('webpack-dev-middleware')
 var webpackHotMiddleware = require('webpack-hot-middleware')
@@ -14,8 +15,8 @@ app.use(webpackHotMiddleware(compiler));
 app.use(express.static('./dist'));
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + '/index.html')
-})
+  res.sendFile(path.resolve('client/index.html'));
+});
 
 app.listen(port, function(error) {
   if (error) {

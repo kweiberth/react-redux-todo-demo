@@ -18,7 +18,6 @@ var App = React.createClass({
 });
 
 var mapStateToProps = function (state) {
-  console.log(state);
   return state;
 };
 
