@@ -15,9 +15,6 @@ var initialState = {
   ]
 }
 
-// initialize redux store with initial state
-// pass redux store down to components
-
 render(
   <App/>,
   document.getElementById('app')

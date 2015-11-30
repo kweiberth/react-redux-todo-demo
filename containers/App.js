@@ -12,8 +12,8 @@ var App = React.createClass({
   render: function() {
     return
       <div>
-        <TodoInput/>
-        <TodoList todos={[]}/>
+        <TodoInput addTodo={this.props.actions.addTodo}/>
+        <TodoList todos={this.props.todos} actions={this.props.actions}/>
       </div>
   }
 

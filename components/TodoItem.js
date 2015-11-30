@@ -14,15 +14,15 @@ var TodoItem = React.createClass({
 
   render: function() {
 
-    return
+    return (
       <li>
         <div>
-          this should be the todo text
+          {this.props.todo.text}
         </div>
         <button onClick={this.handleCompleted}>toggle completed</button>
         <button onClick={this.handleDelete}>delete</button>
       </li>
-
+    )
   }
 
 });

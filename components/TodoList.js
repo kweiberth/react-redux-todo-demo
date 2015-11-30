@@ -7,7 +7,7 @@ var TodoList = React.createClass({
 
   render: function() {
 
-    return
+    return (
       <ul>
         
         {
@@ -23,6 +23,7 @@ var TodoList = React.createClass({
         }
         
       </ul>
+    )
   }
 
 });

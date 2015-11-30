@@ -22,7 +22,7 @@ var TodoInput = React.createClass({
 
   render: function() {
 
-    return
+    return (
       <div>
 
         <form onSubmit={this.handleSubmit}>
@@ -37,6 +37,7 @@ var TodoInput = React.createClass({
         </form>
 
       </div>
+    )
   }
 
 });
