@@ -1,3 +1,5 @@
+// TodoList.js
+
 import React from 'react';
 import TodoItem from './TodoItem'
 
@@ -5,8 +7,8 @@ var TodoList = React.createClass({
 
   render: function() {
 
-    return (
-      <div>
+    return
+      <ul>
         
         {
           this.props.todos.map(function (todo) {
@@ -20,9 +22,9 @@ var TodoList = React.createClass({
           }.bind(this))
         }
         
-      </div>
-    )
+      </ul>
   }
+
 });
 
 module.exports = TodoList;

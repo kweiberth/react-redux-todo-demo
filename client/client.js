@@ -1,21 +1,24 @@
+// client.js
+
+import App from '../containers/App';
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import App from '../containers/App';
 
 var initialState = {
-  todos: [{
-    id: 0,
-    completed: false,
-    text: 'Learn how to use react and redux'
-  }]
+  todos: [
+    {
+      id: 0,
+      completed: false,
+      text: 'Learn how to use react and redux'
+    }
+  ]
 }
 
-var store =  require('../redux/store')(initialState);
+// initialize redux store with initial state
+// pass redux store down to components
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App/>,
   document.getElementById('app')
 );
