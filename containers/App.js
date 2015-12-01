@@ -10,11 +10,12 @@ import TodoList from '../components/TodoList'
 var App = React.createClass({
 
   render: function() {
-    return
+    return (
       <div>
         <TodoInput addTodo={this.props.actions.addTodo}/>
         <TodoList todos={this.props.todos} actions={this.props.actions}/>
       </div>
+    )
   }
 
 });
